@@ -67,3 +67,60 @@ export default defineConfig([
   },
 ])
 ```
+
+```text
+src/
+├── App.tsx
+├── index.css
+├── main.tsx
+├── vite-env.d.ts
+├── features/
+│   └── products/
+│       ├── domain/
+│       │   ├── entities/
+│       │   │   └── Product.ts
+│       │   ├── repositories/
+│       │   │   └── ProductRepository.ts
+│       │   └── usecases/
+│       │       ├── CreateProduct.ts
+│       │       ├── DeleteProduct.ts
+│       │       ├── GetProductById.ts
+│       │       ├── GetProducts.ts
+│       │       └── UpdateProduct.ts
+│       ├── infrastructure/
+│       │   ├── index.ts
+│       │   └── repositories/
+│       │       ├── ProductRepositoryImpl.ts
+│       │       └── ProductRepositoryMock.ts
+│       └── presentation/
+│           ├── components/
+│           │   ├── ModernProductCard.tsx
+│           │   └── ModernProductForm.tsx
+│           ├── dto/
+│           │   └── ProductDto.ts
+│           ├── hooks/
+│           │   └── useProducts.ts
+│           └── pages/
+│               └── ProductsPage.tsx
+└── shared/
+    ├── infrastructure/
+    │   ├── AxiosClient.ts
+    │   ├── HttpClient.ts
+    │   └── config/
+    │       └── app.config.ts
+    └── presentation/
+        ├── components/
+        │   ├── Navigation.tsx
+        │   └── ui/
+        │       ├── button.tsx
+        │       ├── card.tsx
+        │       ├── index.tsx
+        │       ├── input.tsx
+        │       └── label.tsx
+        ├── layouts/
+        │   └── RootLayout.tsx
+        ├── lib/
+        │   └── utils.ts
+        └── router/
+            └── index.tsx
+```
